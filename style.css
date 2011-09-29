@@ -59,7 +59,7 @@ blockquote {
 blockquote p{ 
 	padding: 15px;
 }
-ul ul{ margin-left:15px; }
+ul{ margin-left:15px; }
 ol{ padding-left:25px; }
 #canvas {
 	background:transparent url(images/header-design.jpg) top right no-repeat; 
@@ -675,81 +675,101 @@ a:hover.facebook{
 
 /*
  * Media queries for responsive design
- * These follow after primary styles so they will successfully override. 
+ *
  */
 
-@media screen and (max-width: 960px) and (orientation:portrait) { 
-  /* Style adjustments for landscape mode goes here */
-     #canvas, #comment, #primaryContent {
-		  padding: 0;
-		  width: inherit;
-	}
+@media (max-width: 1024px) { 
 	#canvas {
-		padding:10px;
+	    padding:40px;
+    	width: auto;
 	}
 	#primaryContent {
-		margin:0;
+		width: 65%;
 	}
 	#secondaryContent {
-		display:none;
-	}
-	.main-menu {
-		background:none;
-		height:inherit;
-		text-align:left
-	}
-	.main-menu ul li, #primaryContent, #secondaryContent {
-		float:none;
-	}
-	.main-menu ul li {
-		display:inline-block;
-		padding:0;
-		margin: 0 3px 3px 0;
-	}
-	.main-menu ul li a{
-		background:#E2DBD1;
-		font-size:0.90em;
-		padding:0px 2px;
-	}
-	
+	    border-width: 5px;
+    	width: 18%;
+	}	
 	img {
-		margin:0;
+		margin: 10px 0;
+		height: auto;
+    	width: 97%;
 	}
 }
+@media (max-width: 800px) { 
+	.main-menu {
+   		height: auto;
+		text-align: center;
+	}
+	.main-menu ul {
+		background:url(images/nav-bg.gif) repeat-x scroll left bottom;
+	}
+	.main-menu ul li {
+    	display: inline;
+    	float: none;
+    }
+    .main-menu ul li {
+    	display: inline-block;
+    }
+    .main-menu li a {
+    	display: inline-block;
+    }
+    .main-menu ul ul {
+    	text-align: left;
+    }
+	#primaryContent {
+		float: none;
+		margin-right: 0;
+		width: auto;
+	}
+	#secondaryContent {
+   		 clear: both;
+   		 width: auto;
+	}
+	#secondaryContent > ul > li {
+  		 float: left;	
+    	 width: 33%;
+    }	 
+	#secondaryContent ul ul {
+   		 float: left;
+    	 width: auto;
+	}
+	#secondaryContent li {
+    	border-bottom: none;
+    } 
+    #secondaryContent li li{
+    	border-bottom: 1px dotted #D1BFA6;
+    }
+	li.postWrapper, div.postWrapper {
+		margin-bottom: 30px;
+	}
+	.pagination-older,
+	.pagination-newer {
+		margin-bottom: 20px;
+	}	
+
+}
+
 
 @media screen and (max-width: 480px) {
-	
-	/* Style adjustments for landscape mode goes here */
-    #canvas, #comment, #primaryContent {
-		  padding: 0;
-		  width: inherit;
-	}
 	#canvas {
 		padding:10px;
 	}
+	.main-menu {
+    	height: auto;
+    }	
 	#primaryContent {
 		margin:0;
 	}
 	#secondaryContent {
-		display:none;
+    	width: 89%;
+    }
+    #secondaryContent > ul > li {
+    	float: none;
+    	width: auto;
 	}
-	.main-menu {
-		background:none;
-		height:inherit;
-		text-align:left
-	}
-	.main-menu ul li, #primaryContent, #secondaryContent {
-		float:none;
-	}
-	.main-menu ul li {
-		display:inline-block;
-		padding:0;
-		margin: 0 3px 3px 0;
-	}
-	.main-menu ul li a{
-		background:#E2DBD1;
-		font-size:0.90em;
-		padding:0px 2px;
+	#secondaryContent ul ul {
+   		 float: none;
 	}
 	#site-title a,
 	#site-description  {
@@ -759,7 +779,7 @@ a:hover.facebook{
 	}
 	#site-description  {
 		font-size:25px;
-		margin-bottom:10px;
+		margin:10px;
 	}
 	img {
 		margin:0;
