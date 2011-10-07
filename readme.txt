@@ -11,6 +11,7 @@ Thank you for downloading my theme! Liquorice is a simple and clean vintage look
 1. removed wp_get_archives from header
 2. fixed ul issues
 3. Responsive design tweaks 
+4. Adjusted viewport Meta in header
 
 
 New in 2.0
