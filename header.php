@@ -12,7 +12,7 @@
 	<link rel="alternate" type="text/xml" title="RSS .92" href="<?php bloginfo('rss_url'); ?>" />
 	<link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="<?php bloginfo('atom_url'); ?>" />
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-    <meta name="viewport" content="width=device-width, user-scalable=yes initial-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;" />
 <?php
     wp_head();
 	if ( is_singular() ) wp_enqueue_script( 'comment-reply' );
