@@ -274,7 +274,7 @@ div.post {
 .attachment-post-thumbnail {
 	text-align: left;
 }
-img {
+.post img {
 	background:#e2dbd1; 
 	border: 1px solid #d1bfa6;
 	margin:0 10px 10px 0; 
